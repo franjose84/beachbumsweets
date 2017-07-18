@@ -1,0 +1,152 @@
+/*********************
+======================
+		General 
+======================
+*********************/
+
+body {
+	background: url("../img/pastel_pink.png");
+	font-family:'Bitter', serif;
+}
+
+h1 {
+	font-family: 'Cookie', cursive;
+}
+
+
+
+/*********************
+======================
+		Header 
+======================
+*********************/
+header {
+	background-color: #6B3B17;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#logo_banner {
+	border-top: 5px solid #F587D7;
+	border-bottom: 5px solid #F587D7;
+}
+
+#inner_banner {
+	border-top: 2px solid #86CCCC;
+	border-bottom: 2px solid #86CCCC;
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+
+
+/*********************
+======================
+	   Jumbotron 
+======================
+*********************/
+.wrapper {
+	border-radius: 30px;
+	background-color: #F7F7F2;
+	z-index: 999;
+}
+
+.title {
+	text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+	color: #0FA8A1;
+}
+
+.intro {
+	color: #0FA8A1;
+}
+
+.cheesecake {
+	z-index: -1;
+	width: 100%;
+	border-radius: 30px;
+	margin-top: -15px;
+}
+
+
+
+
+/*********************
+======================
+	   Navigation 
+======================
+*********************/
+.nav-item {
+	padding: 0.3em 0.7em;
+	font-family: Georgia, serif;
+	font-size: 1em;
+	font-weight: bold;
+	background-color: #F587D7;
+}
+
+
+.nav-item:hover {
+	color: #fff;
+	background-color: #99E2E2;
+}
+
+.nav-link:hover,
+.nav-link {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.nav-item:first-child {
+	border-radius: 30px 0 0 0;
+}
+
+.nav-item:last-child {
+	border-radius: 0 0 30px 0;
+}
+
+.nav-item:nth-last-child(1n+2) {
+	border-right: 1px solid #86CCCC;
+}
+
+.nav-item.active,
+.nav-item.active:hover {
+	background-color: #D41C62;
+}
+
+.navbar .navbar-toggler {
+	border: 2px solid #BEE5E5;
+	background: #0FA8A1;
+	position: relative;
+	opacity: 0.5;
+}
+
+.navbar .navbar-toggler-icon {
+	border: 2px solid #BEE5E5;
+	background: #0FA8A1;
+}
+
+
+/*********************
+======================
+	   Footer 
+======================
+*********************/
+
+footer {
+
+	background-color: #86CCCC;
+	padding: 2em 0 2em 0;
+}
+
+footer p {
+	color: #fff;
+	font-size: 0.85em;
+	margin: 0;
+}
+
+
+/** Clearfix **/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
