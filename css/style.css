@@ -6,7 +6,18 @@
 
 body {
 	background: url("../img/pastel_pink.png");
+
 	font-family:'Bitter', serif;
+}
+
+p {
+	font-size: 0.85em;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1em;
+  }
 }
 
 h1 {
@@ -36,6 +47,22 @@ header {
 	border-bottom: 2px solid #86CCCC;
 	margin-top:5px;
 	margin-bottom: 5px;
+}
+
+
+
+.social_icons {
+	text-align: right;
+}
+
+@media (min-width: 768px) {
+	
+
+	.icon {
+		display: block;
+		float: right;
+		clear: both;
+	}
 }
 
 
@@ -112,16 +139,17 @@ header {
 	background-color: #D41C62;
 }
 
-.navbar .navbar-toggler {
+button.navbar-toggler {
 	border: 2px solid #BEE5E5;
 	background: #0FA8A1;
+	color:#000;
 	position: relative;
-	
 }
 
-.navbar .navbar-toggler-icon {
+span.navbar-toggler-icon {
 	border: 2px solid #BEE5E5;
 	background: #0FA8A1;
+	color: #000;
 }
 
 
