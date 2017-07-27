@@ -90,8 +90,8 @@ header {
 	z-index: 1000;
 }
 
-/*Before 768px (Tablets and phones)*/
-@media(max-width: 768px) {
+
+@media(max-width: 768px) {  	/*Before 768px (Tablets and phones)*/
 	ul.navbar-nav {
 		margin-left: 5%;
 		border: 1px solid rgba(127,219,219,0.8);
@@ -122,8 +122,7 @@ header {
 	}
 }
 
-/*After 768px (Big screens)*/
-@media (min-width: 768px) {
+@media (min-width: 768px) {		/*After 768px (Big screens)*/
 	.nav-item {
 		font-family: Georgia, serif;
 		font-size: 1em;
@@ -138,7 +137,7 @@ header {
 	}
 
 	.nav-link {
-		padding: 0.3em 1.1em!important;
+		padding: 0.3em 1.1em!important; 
 	}
 	
 	.nav-item:first-child {
@@ -150,7 +149,7 @@ header {
 	
 	.nav-item.active,
 	.nav-item.active:hover {
-		background-color: #D41C62;
+		background-color: #99E2E2;
 	}
 }
 
@@ -158,7 +157,6 @@ button.navbar-toggler {
 	background: #0FA8A1; /*Button background color change*/
 	margin-left:5%;
 }
-
 
 /***** --Footer-- *****/
 
@@ -178,4 +176,33 @@ footer p {
 	footer p {
 		text-align: center;
 	}
+}
+
+/***** --About Page-- *****/
+.background {
+	background-color: #99E2E2;
+	color: #0a7570;
+}
+
+.about_title {
+	border-bottom: 1px solid #0a7575;
+}
+
+.img2 {
+	padding: 25px 0;
+}
+
+h2 {
+	font-family:'Bitter', serif;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+h3 {
+	font-family:'Bitter', serif;
+	text-align: center;
+	font-size: 1em;
+	font-style: italic;
 }
