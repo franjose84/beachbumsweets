@@ -1,8 +1,5 @@
-/*********************
-======================
-		General 
-======================
-*********************/
+
+/***** --General-- *****/
 body {
 	background: url("../img/pastel_pink.png");
 	font-family:'Bitter', serif;
@@ -20,11 +17,7 @@ h3 {
 
 
 
-/*********************
-======================
-		Header 
-======================
-*********************/
+/***** --Header-- *****/
 header {
 	background-color: #6B3B17;
 	padding-top: 5px;
@@ -56,11 +49,7 @@ header {
 }
 
 
-/*********************
-======================
-	   Main 
-======================
-*********************/
+/**** --Main-- ****/
 .wrapper {
 	border-radius: 30px;
 	background-color: #F7F7F2;
@@ -75,6 +64,7 @@ header {
 
 .intro {
 	color: #0FA8A1;
+	font-style: italic;
 }
 @media (min-width: 768px) {
 	.intro {
@@ -91,11 +81,7 @@ header {
 }
 
 
-/*********************
-======================
-	   Navigation 
-======================
-*********************/
+/***** --Navigation-- *****/
 .navbar {
 	position: absolute;
 	top:201px;
@@ -116,9 +102,9 @@ header {
 	.nav-item {
 		padding-left: 1em;
 				
-		font-family: Georgia, serif;
 		font-size: 1em;
-		font-weight: bold;
+		font-weight: 700;
+		letter-spacing: 1px;
 	}
 
 	.nav-item:hover {
@@ -136,7 +122,7 @@ header {
 	}
 }
 
-/*After 768px width (Big screen)*/
+/*After 768px (Big screens)*/
 @media (min-width: 768px) {
 	.nav-item {
 		font-family: Georgia, serif;
@@ -174,11 +160,7 @@ button.navbar-toggler {
 }
 
 
-/*********************
-======================
-	   Footer 
-======================
-*********************/
+/***** --Footer-- *****/
 
 footer {
 	background-color: #86CCCC;
@@ -189,6 +171,7 @@ footer p {
 	color: #fff;
 	font-size: 0.85em;
 	margin: 0;
+	font-weight: bold;
 }
 
 @media (max-width: 768px) {
