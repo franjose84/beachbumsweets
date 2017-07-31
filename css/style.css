@@ -9,10 +9,21 @@ p {
 	font-size: 0.85em;
 }
 
-h1,
-h2,
-h3 {
+h1 {
 	font-family: 'Cookie', cursive;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+h3 {
+	text-align: center;
+	font-size: 1em;
+	font-style: italic;
 }
 
 
@@ -151,6 +162,9 @@ header {
 	.nav-item.active:hover {
 		background-color: #99E2E2;
 	}
+	.navbar-inverse .navbar-nav .active>.nav-link {
+		color: #0a7570;
+	}
 }
 
 button.navbar-toggler {
@@ -179,30 +193,34 @@ footer p {
 }
 
 /***** --About Page-- *****/
-.background {
+.bbs_background {
 	background-color: #99E2E2;
 	color: #0a7570;
 }
 
-.about_title {
+.bbs_title {
 	border-bottom: 1px solid #0a7575;
 }
 
-.img2 {
+#gaby {
+	max-width: 200px;
+}
+#cheryl {
 	padding: 25px 0;
 }
 
-h2 {
-	font-family:'Bitter', serif;
-	text-align: center;
-	font-size: 1.5em;
-	font-weight: 700;
-	text-decoration: underline;
+
+/***** --Carousel-- *****/
+.carousel-item img {
+	width: auto;
+	height: 500px;
+	max-height: 500px;
 }
 
-h3 {
-	font-family:'Bitter', serif;
-	text-align: center;
-	font-size: 1em;
-	font-style: italic;
+@media (max-width: 768px) {
+	.carousel-item img {
+		width: auto;
+		height: 250px;
+		max-height: 250px;
+	}
 }
