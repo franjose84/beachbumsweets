@@ -207,6 +207,18 @@ footer p
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+/***** --Menu Page-- *****/
+
+.modal-header {
+    background-color: #0a7570;
+}
+.form-control:focus {
+    border-color: #0a7570;
+}
+form {
+    font-size: 0.85em;
+}
+
 /***** --Media Queries-- *****/
 
 @media (min-width: 768px)

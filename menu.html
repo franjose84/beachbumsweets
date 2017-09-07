@@ -61,9 +61,297 @@
 		
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veritatis rem cum cupiditate fuga eius amet, doloremque hic veniam esse omnis vel, aperiam praesentium fugiat eveniet. Ab cumque nesciunt iste!</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus earum molestiae rem quam eius, facere nobis vitae sed quisquam voluptatem enim delectus, impedit fugiat, sint repellendus voluptas facilis, consequatur voluptates.</p>
+
+		<button type="submit" class="bbs-btn" data-toggle="modal" data-target="#orderForm">Request a Quote</button>
 	</div>
-	
 </div>
+<div class="modal fade" id="orderForm">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header text-white">
+				<h5 class="modal-title">Order Quote Form</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+			<!-- Registration form -->
+				<form>
+					<div class="form-group ">
+						<label for="name">Name: &#42;</label>
+						<input type="text" class="form-control mb-2" id="firstName" placeholder="First Name">
+						<input type="text" class="form-control" id="lastName" placeholder="Last Name">
+					</div>
+					<div class="form-group">
+						<label for="phone">Phone Number:</label>
+						<input type="text" class="form-control" id="phone">
+					</div>
+					<div class="form-group">
+						<label for="mail">Email: &#42;</label>
+						<input type="email" class="form-control" id="email">
+					</div>
+
+					<div class="form-group row">
+						<label for="pickup-or-delivery" class="col-4 col-form-label">Pick-up or delivery: &#42;</label>
+						<div class="col-4">
+							<select class="form-control" id="pickup-or-delivery" >
+								<option>Select one...</option>
+								<option>Pick-up</option>
+								<option>Delivery</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="eventDate" class="col-md-4 col-form-label">Event date: &#42;</label>
+						<div class="col-md-8">
+							<input class="form-control" type="date" id="eventDate" placeholder="MM/DD/YYYY">
+						</div>
+					</div>
+				
+					<div class="form-group row">
+						<label for="eventTime" class="col-md-4 col-form-label">Event time: &#42;</label>
+						<div class="col-md-8">
+							<input class="form-control" type="time" value="13:45:00" id="eventTime">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="address" class="col-md-4 col-form-label">Address: </label>
+						<div class="col-md-8">
+							<input class="form-control mb-2" type="text" id="streetAddress" placeholder="Street Address  &#42;">
+							<input class="form-control mb-2" type="text" id="streetAddress2" placeholder="Street Address Line 2">
+							<div class="form-inline d-flex justify-content-between">
+								<input class="form-control mb-2" type="text" id="city" placeholder="City &#42;">
+								<input class="form-control mb-2" type="text" id="region" placeholder="Region &#42;">
+								<input class="form-control mb-2" type="text" id="zipCode" placeholder="Zip Code &#42;">
+							</div>
+						</div>
+					</div>
+					<fieldset class="form-group">
+						<label for="role custom-select">Craving: &#42;</label>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="cravings" id="cake" value="cake" checked>  Cake
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="cravings" id="brownies" value="brownies">  Brownies
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="cravings" id="cookies" value="cookies"> Cookies
+									</label>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="cravings" id="Pie" value="Pie"> Pie
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="cravings" id="bars" value="bars"> Bars
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="cravings" id="other" value="other"> Other:
+										<input class="form-control" type="text" name="other">
+									</label>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<label>
+									Qty: &#42; <input class="form-control" type="text" name="quantity">
+								</label>
+							</div>
+						</div>
+					</fieldset>					
+					<div class="form-group row">
+						<label for="cakeFlavor" class="col-md-2 col-form-label mb-2">Cake flavor:</label>
+						<div class="col-md-5">
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Devil's food
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Butter yellow
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Red velvet
+								</label>
+							</div>
+							
+						</div>
+						<div class="col-md-5">
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Vanilla
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									German chocolate
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Death by chocolate
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Other: <input class="form-control" type="text" name="other">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="cakeFlavor" class="col-md-2 col-form-label mb-2">Frosting flavor:</label>
+						<div class="col-md-5">
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Vanilla buttercream
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Cream cheese buttercream
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Triple chocolate frosting
+								</label>
+							</div>
+							
+						</div>
+						<div class="col-md-5">
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Chocolate buttercream
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									German chocolate icing
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Whipped cream (not recommended for warm events)
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Other: <input class="form-control" type="text" name="other">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="cakeFlavor" class="col-md-2 col-form-label mb-2">Frosting flavor:</label>
+						<div class="col-md-5">
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Vanilla buttercream
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Cream cheese buttercream
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Triple chocolate frosting
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Strawberries(fresh)
+								</label>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Chocolate buttercream
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									German chocolate icing
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Whipped cream (not recommended for warm events)
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Strawberries(filling)
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Other: <input class="form-control" type="text" name="other">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-2">
+							<label for="decoration">Decoration details:</label>
+							<small class="form-text text-muted">Please provide as many detail as you can so we can provide you with the most accurate quote.</small>
+						</div>
+						<div class="col-md-10">
+							<textarea class="form-control" type="text" name="details" rows="10"></textarea>
+						</div>
+					</div>
+					<hr class="mb-4">
+					<button type="submit" class="bbs-btn">Submit</button>
+					<button type="reset" class="bbs-btn">Reset</button>
+				</form>
+
+			<!-- Registration form ends -->
+			</div>
+		</div>
+	</div>
+</div>
+
 <!-- /Menu -->
 
 <footer>
